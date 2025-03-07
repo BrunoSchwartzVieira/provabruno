@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --roboto: "Roboto", sans-serif;
+  --baloo: "Baloo 2", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 56px;
+  padding-top: 94px;
+  padding-bottom: 108px;
+  background-image: url(./assets/bg-blur.svg);
+}
+
+#content {
+  width: 588px;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-family: var(--baloo);
+    font-size: 48px;
+    font-weight: 800;
+    color: #272221;
+    padding-bottom: 16px;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #403937;
+    padding-bottom: 66px;
+    font-family: var(--roboto);
+  }
+}
+
+.info-list {
+  font-family: var(--roboto);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  padding: 8px;
+  border-radius: 999px;
+  color: white;
+}
+
+.yellow-dark {
+  background-color: #c47f17;
+}
+
+.base-text {
+  background-color: #574f4d;
+}
+
+.yellow {
+  background-color: #dbac2c;
+}
+
+.purple {
+  background-color: #8047f8;
+}
+
+section {
+  padding: 32px 160px;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 800;
+    font-family: var(--baloo);
+    color: #403937;
+  }
+}
+
+.coffees {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+.coffee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  background-color: #f3f2f2;
+  border-radius: 6px 36px 6px 36px;
+}
+
+.coffee img {
+  padding-bottom: 16px;
+}
+
+.coffee h3 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--roboto);
+  color: #272221;
+  padding-bottom: 8px;
+}
+
+.coffee p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--roboto);
+  color: #403937;
+  padding-bottom: 32px;
+}
+
+.coffee span {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--roboto);
+  color: #c47f17;
+}
+
+.coffee button {
+  padding: 8px 32px;
+  border-radius: 6px;
+  border: none;
+  background-color: #c47f17;
+  color: #f3f2f2;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--roboto);
+}
+
+.coffee button:hover {
+  background-color: #dbac2c;
+}
+
+.coffee button:active {
+  background-color: #8047f8;
+}
+#cafe-count {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: var(--roboto);
+  color: #272221;
+  margin-bottom: 16px;
+}
+
+#add-cafe,
+#remove-cafe {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #c47f17;
+  color: #f3f2f2;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--roboto);
+}
+
+#add-cafe:hover,
+#remove-cafe:hover {
+  background-color: #dbac2c;
+}
+
+#add-cafe:active,
+#remove-cafe:active {
+  background-color: #8047f8;
+}
+
+footer {
+  padding: 32px 160px;
+  background-color: #4b2995;
+  color: #f3f2f2;
+  text-align: center;
+  font-size: 14;
+  font-weight: 400;
+  font-family: var(--roboto);
+}
+
+footer a {
+  color: #f3f2f2;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:active {
+  color: #dbac2c;
+}
+
+footer p {
+  padding: 32px 0;
+}
+
+footer span {
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 32px 64px;
+  }
+
+  section {
+    padding: 32px 64px;
+  }
+
+  footer {
+    padding: 32px 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 32px 32px;
+  }
+
+  section {
+    padding: 32px 32px;
+  }
+
+  footer {
+    padding: 32px 32px;
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    padding: 32px 16px;
+  }
+
+  section {
+    padding: 32px 16px;
+  }
+
+  footer {
+    padding: 32px 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    padding: 32px 8px;
+  }
+
+  section {
+    padding: 32px 8px;
+  }
+
+  footer {
+    padding: 32px 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    padding: 32px 4px;
+  }
+
+  section {
+    padding: 32px 4px;
+  }
+
+  footer {
+    padding: 32px 4px;
+  }
+}
